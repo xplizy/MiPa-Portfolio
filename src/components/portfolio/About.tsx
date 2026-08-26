@@ -1,13 +1,14 @@
 const STACK = [
-  { name: ".NET 8 / C#", level: 95 },
-  { name: "Azure (Functions, AKS, Service Bus)", level: 92 },
-  { name: "ASP.NET Core / Minimal APIs", level: 94 },
-  { name: "Entity Framework / SQL", level: 88 },
-  { name: "Docker / Kubernetes", level: 85 },
-  { name: "CI/CD (GitHub Actions, Azure DevOps)", level: 90 },
-  { name: "Terraform / Bicep", level: 78 },
-  { name: "TypeScript / React", level: 80 },
+  ".NET 8 / C#",
+  "Azure (Functions, AKS, Service Bus)",
+  "ASP.NET Core / Minimal APIs",
+  "Entity Framework / SQL",
+  "Docker / Kubernetes",
+  "CI/CD (GitHub Actions, Azure DevOps)",
+  "Terraform / Bicep",
+  "TypeScript / React",
 ];
+
 
 export function About() {
   return (
@@ -93,30 +94,21 @@ export function About() {
               ~/stack
             </p>
             <p className="font-mono text-xs text-muted-foreground">
-              {STACK.length} dependencies
+              {STACK.length} tools
             </p>
           </div>
-          <div className="mt-6 grid gap-x-10 gap-y-4 md:grid-cols-2">
+          <div className="mt-6 flex flex-wrap gap-3">
             {STACK.map((s) => (
-              <div key={s.name}>
-                <div className="flex items-baseline justify-between">
-                  <span className="font-mono text-sm text-foreground">
-                    {s.name}
-                  </span>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {s.level}%
-                  </span>
-                </div>
-                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-background">
-                  <div
-                    className="h-full ember-gradient"
-                    style={{ width: `${s.level}%` }}
-                  />
-                </div>
-              </div>
+              <span
+                key={s}
+                className="rounded-lg border border-border bg-background/50 px-4 py-2 font-mono text-sm text-foreground transition-colors hover:border-ember/40 hover:text-ember"
+              >
+                {s}
+              </span>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
