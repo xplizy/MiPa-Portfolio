@@ -1,13 +1,14 @@
 const STACK = [
-  { name: ".NET 8 / C#", level: 95 },
-  { name: "Azure (Functions, AKS, Service Bus)", level: 92 },
-  { name: "ASP.NET Core / Minimal APIs", level: 94 },
-  { name: "Entity Framework / SQL", level: 88 },
-  { name: "Docker / Kubernetes", level: 85 },
-  { name: "CI/CD (GitHub Actions, Azure DevOps)", level: 90 },
-  { name: "Terraform / Bicep", level: 78 },
-  { name: "TypeScript / React", level: 80 },
+  ".NET 8 / C#",
+  "Azure (Functions, AKS, Service Bus)",
+  "ASP.NET Core / Minimal APIs",
+  "Entity Framework / SQL",
+  "Docker / Kubernetes",
+  "CI/CD (GitHub Actions, Azure DevOps)",
+  "Terraform / Bicep",
+  "TypeScript / React",
 ];
+
 
 export function About() {
   return (
