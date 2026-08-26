@@ -94,30 +94,21 @@ export function About() {
               ~/stack
             </p>
             <p className="font-mono text-xs text-muted-foreground">
-              {STACK.length} dependencies
+              {STACK.length} tools
             </p>
           </div>
-          <div className="mt-6 grid gap-x-10 gap-y-4 md:grid-cols-2">
+          <div className="mt-6 flex flex-wrap gap-3">
             {STACK.map((s) => (
-              <div key={s.name}>
-                <div className="flex items-baseline justify-between">
-                  <span className="font-mono text-sm text-foreground">
-                    {s.name}
-                  </span>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {s.level}%
-                  </span>
-                </div>
-                <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-background">
-                  <div
-                    className="h-full ember-gradient"
-                    style={{ width: `${s.level}%` }}
-                  />
-                </div>
-              </div>
+              <span
+                key={s}
+                className="rounded-lg border border-border bg-background/50 px-4 py-2 font-mono text-sm text-foreground transition-colors hover:border-ember/40 hover:text-ember"
+              >
+                {s}
+              </span>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
