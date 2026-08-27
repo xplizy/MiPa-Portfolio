@@ -1,12 +1,13 @@
 const STACK = [
   ".NET 8 / C#",
-  "Azure (Functions, AKS, Service Bus)",
+  "Azure",
   "ASP.NET Core / Minimal APIs",
   "Entity Framework / SQL",
   "Docker / Kubernetes",
-  "CI/CD (GitHub Actions, Azure DevOps)",
+  "CI/CD (Azure DevOps)",
   "Terraform / Bicep",
   "TypeScript / React",
+  "HTML / CSS / Tailwind",
 ];
 
 
@@ -21,21 +22,19 @@ export function About() {
           <article className="bento md:col-span-4 md:row-span-2 p-8 md:p-10 grain">
             <p className="font-mono text-xs text-ember">const bio = `</p>
             <p className="mt-4 text-xl leading-relaxed text-foreground md:text-2xl">
-              Jag heter Alex och jag är{" "}
-              <span className="text-ember">.NET Cloud Developer</span> med 6+ år
-              i branschen. Jag bygger backend-system som inte vaknar dig kl 03 —
-              event-drivna mikrotjänster, serverless workflows och API:er som
-              skalar utan drama.
+              Jag heter Michel och jag är{" "}
+              <span className="text-ember">.NET Cloud Developer</span> med 2+ år
+              i branschen. Jag gillar att bygga kompletta och användarvänliga applikationer där frontend, backend, databaser och molntjänster fungerar tillsammans.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Jag tror på pragmatisk arkitektur, läsbar kod och observability
-              från dag ett. När jag inte kodar bygger jag mekaniska tangentbord
-              och dricker oförsvarligt mycket espresso.
+              Jag lär mig bäst genom att bygga och utveckla egna projekt, 
+              där jag får arbeta med hela kedjan – från idé och användargränssnitt till API, databaser och molninfrastruktur. 
+              Jag tycker särskilt om problemlösning, att lära mig nya tekniker och att förstå hur olika delar av en applikation hänger ihop.
             </p>
             <p className="mt-6 font-mono text-xs text-ember">`;</p>
 
             <div className="mt-8 flex flex-wrap gap-2">
-              {["C#", "Azure", "Kubernetes", "DDD", "Event-Driven", "CQRS"].map(
+              {["C#", "Azure", ".NET", "SQL", "DevOps"].map(
                 (t) => (
                   <span
                     key={t}
@@ -56,15 +55,15 @@ export function About() {
             <ul className="mt-4 space-y-3 font-mono text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-ember">▸</span>
-                <span>Bygger event-driven SaaS på Azure</span>
+                <span>Bygger en Golf applikation</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-ember">▸</span>
-                <span>Läser <em className="text-foreground">Designing Data-Intensive Applications</em></span>
+                <span>Läser <em className="text-foreground">Cybersäkerhet</em></span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-ember">▸</span>
-                <span>Lär mig Rust på fritiden</span>
+                <span>Lär mig xUnit på fritiden</span>
               </li>
             </ul>
           </article>
@@ -76,13 +75,16 @@ export function About() {
               location
             </p>
             <p className="mt-3 font-mono text-3xl font-bold text-foreground">
-              Stockholm
+              Göteborg
             </p>
             <p className="mt-1 font-mono text-xs text-muted-foreground">
-              59.3293° N, 18.0686° E
+              57°42′27″N 11°58′03″E
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
-              Remote-first, men trivs i ett bra teamrum.
+              Onsite, Hybrid eller Remote.
+            </p>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Jag är flexibel och kan arbeta på plats i Göteborg eller på distans.
             </p>
           </article>
         </div>

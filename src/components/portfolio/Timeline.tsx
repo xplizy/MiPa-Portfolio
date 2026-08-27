@@ -12,60 +12,85 @@ type Entry = {
 
 const ENTRIES: Entry[] = [
   {
-    year: "2023 — nu",
-    role: "Senior .NET Cloud Developer",
-    company: "Northwind Cloud AB",
-    location: "Stockholm / Remote",
+    year: "2024 — 2025",
+    role: ".NET Cloud Developer (LIA)",
+    company: "Recas AB",
+    location: "Trollhättan",
     type: "work",
     bullets: [
-      "Tech lead för event-driven plattform på Azure (Functions, Service Bus, Cosmos DB)",
-      "Sänkte cold start med 70% via Native AOT och Premium plan-tuning",
-      "Införde OpenTelemetry + distributed tracing över 14 tjänster",
+      "Deltog i utvecklingen av en mobilapplikation för att uppmärksamma försäljningsframgångar",
+      "Arbetade med både frontend- och backendutveckling",
+      "Ansvarade för uppsättning och hantering av infrastruktur i Microsoft Azure",
+      "Fick helhetsförståelse för utvecklingsprocessen från idé till färdig lösning",
     ],
-    stack: [".NET 8", "Azure", "Bicep", "OTel"],
+    stack: ["ASP.NET Core", "Azure", "C#", "DevOps", "Scrum"],
   },
   {
-    year: "2021 — 2023",
-    role: ".NET Backend Developer",
-    company: "Lumen Labs",
-    location: "Stockholm",
-    type: "work",
-    bullets: [
-      "Byggde multi-tenant SaaS-backend med ASP.NET Core och Postgres",
-      "Designade CI/CD-pipelines i Azure DevOps med blue/green deployments",
-      "Migrerade legacy WCF-tjänster till gRPC",
-    ],
-    stack: ["ASP.NET Core", "Postgres", "gRPC"],
-  },
-  {
-    year: "2022",
-    role: "Microsoft Certified: Azure Developer Associate (AZ-204)",
-    company: "Microsoft",
-    location: "Certifiering",
-    type: "cert",
-    bullets: ["Bekräftad kompetens inom Azure compute, storage, security och monitoring."],
-    stack: ["AZ-204"],
-  },
-  {
-    year: "2019 — 2021",
-    role: "Software Developer",
-    company: "Boreal Systems",
+    year: "2026 - behov",
+    role: "Ordningsvakt",
+    company: "Orca Security",
     location: "Göteborg",
     type: "work",
     bullets: [
-      "Utvecklade interna verktyg i C# och React",
-      "Bidrog till open source-bibliotek för Azure SDK",
+      "Ordningsvakt på evenemang, fotboll och krog",
     ],
-    stack: ["C#", "React", "Azure SDK"],
+    stack: ["Ordningsvakt", "Fotboll", "Evenemang", "Krog"],
   },
   {
-    year: "2015 — 2019",
-    role: "MSc Computer Science",
-    company: "KTH Royal Institute of Technology",
-    location: "Stockholm",
+    year: "2019 - Tillsvidare",
+    role: "Väktare / Ordningsvakt",
+    company: "Securitas AB",
+    location: "Göteborg",
+    type: "work",
+    bullets: [
+      "Inom handelsmiljö i Göteborg (Citygruppen)",
+      "Genomför regelbundna butiksbesök och ronderingar",
+      "Skapar trygghet för butikspersonal och kunder",
+      "Utför larmutryckningar till butiker",
+      "Förebygger stölder och ordningsstörningar",
+    ],
+    stack: ["Väktare", "Ordningsvakt"],
+  },
+  {
+    year: "2011 — 2019",
+    role: "Larmoperatör / Väktare",
+    company: "Avarn Security",
+    location: "Göteborg",
+    type: "work",
+    bullets: [
+      "Hanterar inbrotts-, brand- och fellarm samt 112-samtal",
+      "Övervakar och bedömer larmsituationer via kamerasystem",
+      "Fungerar som central beslutsfattare i akuta ärenden",
+      "Säkerställer snabb och effektiv respons vid larmsituationer",
+    ],
+    stack: ["Larmoperatör", "Väktare"],
+  },
+  {
+    year: "2026",
+    role: "Ordningsvakt",
+    company: "Polisen",
+    location: "Skövde",
     type: "edu",
-    bullets: ["Specialisering inom distribuerade system och formell verifiering."],
-    stack: ["KTH"],
+    bullets: ["Genomförde utbildning för behörighet som ordningsvakt, inklusive lagstiftning, konflikthantering och säkerhetsrutiner."],
+    stack: ["Ordningsvakt"],
+  },
+   {
+    year: "2023 — 2025",
+    role: ".NET Cloud Developer",
+    company: "IT-Högskolan",
+    location: "Göteborg",
+    type: "edu",
+    bullets: ["Fick en gedigen utbildning inom .NET och molnteknologier, inklusive C#, ASP.NET Core, Azure och DevOps-principer."],
+    stack: ["C#", "ASP.NET Core", "Azure", "DevOps", "Scrum", "Docker", "Kubernetes", "Terraform", "Bicep" , "Database Design", "Entity Framework", "SQL"],
+  },
+   {
+    year: "2004 - 2007",
+    role: "Restaurang",
+    company: "Burgården Gymnnasium",
+    location: "Göteborg",
+    type: "edu",
+    bullets: ["Kock och restaurangutbildning med fokus på matlagning, service och restaurangdrift."],
+    stack: ["Kock", "Restaurang", "Matlagning", "Service"],
   },
 ];
 
@@ -157,7 +182,7 @@ export function Timeline() {
               className="absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full border border-border bg-background"
             />
             <p className="font-mono text-xs text-muted-foreground">
-              <span className="text-ember">$</span> git init // 1996
+              <span className="text-ember">$</span> git init // 1987
             </p>
           </li>
         </ol>

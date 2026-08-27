@@ -28,7 +28,7 @@ export function SiteNav() {
           <span className="grid h-7 w-7 place-items-center rounded-md ember-gradient text-primary-foreground font-bold">
             {"</>"}
           </span>
-          <span className="text-foreground">alex<span className="text-ember">.lindgren</span></span>
+          <span className="text-foreground">michel<span className="text-ember">.partanen</span></span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {NAV.map((n) => (

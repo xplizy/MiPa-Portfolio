@@ -10,13 +10,13 @@ import { Footer } from "@/components/portfolio/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Lindgren — .NET Cloud Developer" },
+      { title: "Michel Partanen — .NET Cloud Developer" },
       {
         name: "description",
         content:
-          "Portfolio för Alex Lindgren — .NET Cloud Developer som bygger skalbara molnlösningar med C#, Azure och distribuerad arkitektur.",
+          "Portfolio för Michel Partanen — .NET Cloud Developer som bygger skalbara molnlösningar med C#, Azure och distribuerad arkitektur.",
       },
-      { property: "og:title", content: "Alex Lindgren — .NET Cloud Developer" },
+      { property: "og:title", content: "Michel Partanen — .NET Cloud Developer" },
       {
         property: "og:description",
         content: "Skalbara molnlösningar i .NET och Azure. Projekt, CV och kontakt.",

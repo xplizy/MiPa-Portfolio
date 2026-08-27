@@ -1,10 +1,10 @@
 import { SectionHeader } from "./About";
 
 const LINKS = [
-  { label: "email", value: "alex@lindgren.dev", href: "mailto:alex@lindgren.dev" },
-  { label: "github", value: "github.com/alexlindgren", href: "https://github.com" },
-  { label: "linkedin", value: "linkedin.com/in/alexlindgren", href: "https://linkedin.com" },
-  { label: "location", value: "Stockholm, SE", href: "#" },
+  { label: "email", value: "michel-partanen@hotmail.com", href: "mailto:michel-partanen@hotmail.com" },
+  { label: "github", value: "xplizy", href: "https://github.com/xplizy" },
+  { label: "linkedin", value: "Michel Partanen", href: "https://linkedin.com/in/michel-partanen-108440297" },
+  { label: "location", value: "Göteborg, SE", href: "#" },
 ];
 
 export function Contact() {
@@ -26,14 +26,14 @@ export function Contact() {
             <div className="relative">
               <p className="font-mono text-xs text-ember">$ echo $MESSAGE</p>
               <h3 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
-                Har du ett projekt<br />som behöver <span className="text-gradient-ember">cloud-grade</span> backend?
+                Har du ett projekt<br />som behöver <span className="text-gradient-ember">hjälp med?</span> Kontakta mig!
               </h3>
               <p className="mt-5 max-w-md text-muted-foreground">
                 Jag tar konsultuppdrag, fast anställning och tekniska
                 review-uppdrag. Skicka ett mail så hörs vi inom 24h.
               </p>
               <a
-                href="mailto:alex@lindgren.dev"
+                href="mailto:michel-partanen@hotmail.com"
                 className="mt-8 inline-flex items-center gap-2 rounded-lg ember-gradient px-5 py-3 font-mono text-sm font-semibold text-primary-foreground shadow-ember transition-transform hover:-translate-y-0.5"
               >
                 send_email() →

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const PHRASES = [
-  "Building cloud-native systems.",
-  "Scaling APIs on Azure.",
-  "Writing C# that ships.",
-  "Designing distributed systems.",
+"Building modern web applications.",
+"Developing with C# and .NET.",
+"Creating scalable solutions on Azure.",
+"Turning ideas into working software.",
 ];
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
         </div>
 
         <h1 className="text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl lg:text-8xl">
-          Alex Lindgren.<br />
+          Michel Partanen.<br />
           <span className="text-gradient-ember">.NET Cloud</span><br />
           Developer<span className="text-ember">_</span>
         </h1>
@@ -50,9 +50,7 @@ export function Hero() {
         </p>
 
         <p className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">
-          Jag designar och bygger skalbara molnlösningar i .NET och Azure — från
-          event-drivna mikrotjänster till serverless backends som driver produkter
-          i produktion.
+          Jag designar och bygger skalbara molnlösningar i .NET och Azure — från idé och användargränssnitt till API, databaser och molninfrastruktur, med fokus på moderna och hållbara applikationer.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -73,9 +71,9 @@ export function Hero() {
 
         <dl className="mt-16 grid grid-cols-3 gap-4 border-t border-border pt-8 max-w-2xl">
           {[
-            { k: "years", v: "6+" },
-            { k: "projects", v: "40+" },
-            { k: "azure_certs", v: "3" },
+            { k: "years", v: "2+" },
+            { k: "projects", v: "10+" },
+            /*{ k: "azure_certs", v: "?"},*/
           ].map((s) => (
             <div key={s.k}>
               <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">

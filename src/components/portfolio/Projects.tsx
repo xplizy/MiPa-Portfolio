@@ -7,51 +7,57 @@ type Project = {
   metric: { label: string; value: string };
   status: "production" | "beta" | "open-source";
   span: string;
+  url: string;
   accent?: boolean;
 };
 
 const PROJECTS: Project[] = [
   {
-    name: "Helios",
+    name: "Nomix",
     blurb:
-      "Event-driven order platform som processar 2M+ events/dygn över Azure Service Bus och Functions.",
-    stack: [".NET 8", "Azure Functions", "Service Bus", "Cosmos DB"],
-    metric: { label: "throughput", value: "2M/d" },
+      "Webisida för Nomix, hjälpa småföretag att digitalisera sin verksamhet med moderna webblösningar.",
+    stack: ["React", "Next.js", "TailwindCSS", "TypeScript"],
+    metric: { label: "", value: "" },
     status: "production",
     span: "md:col-span-4 md:row-span-2",
+    url: "https://nomix.se",
     accent: true,
   },
   {
-    name: "Aurora API",
-    blurb: "Multi-tenant SaaS-backend med rad-nivå säkerhet och OpenTelemetry.",
-    stack: ["ASP.NET Core", "EF Core", "Postgres", "OTel"],
-    metric: { label: "p95", value: "42ms" },
+    name: "SwingIT",
+    blurb: "Golfapplikation med klubbdistanser, scorekort och statistik.",
+    stack: ["ASP.NET Core", "EF Core", "Postgres", "React"],
+    metric: { label: "", value: "" },
     status: "production",
     span: "md:col-span-2",
+    url: "https://swingit.netlify.app/",
   },
   {
-    name: "Pulse",
-    blurb: "Realtidsdashboard på SignalR + Azure SignalR Service för 50k samtidiga.",
-    stack: ["SignalR", "Redis", "Bicep"],
-    metric: { label: "ccu", value: "50k" },
+    name: "Taekwondo Quiz",
+    blurb: "Quizapplikation för yngre Taekwondo-utövare att träna på teori, regler och historia.",
+    stack: ["React", "TypeScript", "CSS", "HTML"],
+    metric: { label: "", value: "" },
+    status: "production",
+    span: "md:col-span-2",
+    url: "https://tkdquiz.netlify.app/",
+  },
+  {
+    name: "Vain Golv",
+    blurb: "Webisida för Vain Golv, ett golvföretag i Göteborg som erbjuder golvläggning och golvslipning.",
+    stack: ["React", "Next.js", "TailwindCSS", "TypeScript"],
+    metric: { label: "", value: "" },
     status: "beta",
     span: "md:col-span-2",
+    url: "",
   },
   {
-    name: "kbd-cli",
-    blurb: "Open source CLI för QMK-konfiguration. Skrivet i C# med Native AOT.",
-    stack: ["C#", "Native AOT", "Spectre.Console"],
-    metric: { label: "stars", value: "1.2k" },
+    name: "??",
+    blurb: "??",
+    stack: ["GitHub Actions", "Bicep", "TypeScript"],
+    metric: { label: "", value: "" },
     status: "open-source",
     span: "md:col-span-2",
-  },
-  {
-    name: "Forge CI",
-    blurb: "Internt verktyg som genererar GitHub Actions-pipelines från Bicep-templates.",
-    stack: ["GitHub Actions", "Bicep", "TypeScript"],
-    metric: { label: "saved", value: "120h/mån" },
-    status: "production",
-    span: "md:col-span-2",
+    url: "",
   },
 ];
 
@@ -70,11 +76,11 @@ export function Projects() {
         <div className="mt-12 grid gap-5 md:grid-cols-6 md:auto-rows-[180px]">
           {PROJECTS.map((p, i) => (
             <article
-              key={p.name}
-              className={`bento group relative p-6 ${p.span} ${
-                p.accent ? "md:p-10" : ""
-              }`}
-            >
+                key={p.name}
+                className={`bento group relative p-6 ${p.span} ${
+                  p.accent ? "md:p-10" : ""
+                }`}
+              >
               {p.accent && (
                 <div
                   className="pointer-events-none absolute inset-0 opacity-40"
@@ -135,9 +141,15 @@ export function Projects() {
                         {p.metric.value}
                       </p>
                     </div>
-                    <span className="font-mono text-xs text-muted-foreground transition-colors group-hover:text-ember">
-                      view →
-                    </span>
+                    <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="font-mono text-xs text-muted-foreground transition-colors hover:text-ember"
+                      >
+                        visit site →
+                      </a>
                   </div>
                 </div>
               </div>
