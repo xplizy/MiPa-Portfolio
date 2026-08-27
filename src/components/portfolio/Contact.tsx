@@ -26,7 +26,7 @@ export function Contact() {
             <div className="relative">
               <p className="font-mono text-xs text-ember">$ echo $MESSAGE</p>
               <h3 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
-                Har du ett projekt<br />som behöver <span className="text-gradient-ember">hjälp med?</span> Kontakta mig!
+                Har du ett projekt<br />som du behöver <span className="text-gradient-ember">hjälp med?</span> Kontakta mig!
               </h3>
               <p className="mt-5 max-w-md text-muted-foreground">
                 Jag tar konsultuppdrag, fast anställning och tekniska
