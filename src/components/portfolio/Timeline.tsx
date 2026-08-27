@@ -108,8 +108,8 @@ export function Timeline() {
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
+            href="/MiPaCV.pdf"
+            download="MiPaCV.pdf"
             className="inline-flex items-center gap-2 rounded-md border border-border bg-surface px-3 py-1.5 font-mono text-xs text-foreground transition-colors hover:border-ember hover:text-ember"
           >
             ⬇ download cv.pdf
