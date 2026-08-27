@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
     metric: { label: "", value: "" },
     status: "beta",
     span: "md:col-span-2",
-    url: "",
+    url: "https://vaingolv.netlify.app/",
   },
   {
     name: "??",
